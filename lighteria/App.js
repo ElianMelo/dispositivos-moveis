@@ -1,12 +1,13 @@
 import React from 'react';
-import LampApp from './src/exercises/lamp-app/components/LampApp';
-import LampDetail from './src/exercises/lamp-app/components/LampDetail';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import LampApp from './src/LampApp';
+import LampDetail from './src/LampDetail';
+
 const Stack = createNativeStackNavigator();
 
-const App = () => {
+export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>        
@@ -16,5 +17,3 @@ const App = () => {
     </NavigationContainer>
   );
 };
-
-export default App;

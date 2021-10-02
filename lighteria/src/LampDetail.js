@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const LampDetail = ({navigation, route}, props) => {
+export default function LampDetail({navigation, route}, props) {
     return (
         <View style={styles.view}>
             <Text style={styles.text}>{route.params.detail}</Text>
@@ -31,5 +31,3 @@ const styles = StyleSheet.create({
         marginTop: 5
     }
 });
-
-export default LampDetail;

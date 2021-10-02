@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
-const LampItem = (props) => {
+export default function LampItem(props) {
     return (
         <TouchableOpacity
             onPress={() =>
@@ -41,5 +41,3 @@ const styles = StyleSheet.create({
         marginTop: 5
     }
 });
-
-export default LampItem;

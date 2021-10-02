@@ -2,41 +2,41 @@ import React from 'react';
 import { View, StyleSheet, Text, Image, FlatList } from 'react-native';
 import LampItem from './LampItem';
 
-const LampApp = ({ navigation }) => {
-  const img = require('../../../../assets/lamp/icone-sacola.png');
+export default function LampApp({ navigation }) {
+  const img = require('../assets/icone-sacola.png');
 
   const DATA = [
     {
       id: 1,
       title: "Abajur",
-      img: require('../../../../assets/lamp/01-tablelamps.png'),
+      img: require('../assets/01-tablelamps.png'),
       estudio: "asd",
       description: "asd"
     },
     {
       id: 2,
       title: "Lâmpada de teto",
-      img: require('../../../../assets/lamp/02-ceilinglamps.png')
+      img: require('../assets/02-ceilinglamps.png')
     },
     {
       id: 3,
       title: "Arandela",
-      img: require('../../../../assets/lamp/03-sconces.png')
+      img: require('../assets/03-sconces.png')
     },
     {
       id: 4,
       title: "Luminária de chão",
-      img: require('../../../../assets/lamp/04-floorlamps.png')
+      img: require('../assets/04-floorlamps.png')
     },
     {
       id: 5,
       title: "Iluminação leve",
-      img: require('../../../../assets/lamp/05-lightdecor.png')
+      img: require('../assets/05-lightdecor.png')
     },
     {
       id: 6,
       title: "Guirlandas",
-      img: require('../../../../assets/lamp/06-garlands.png')
+      img: require('../assets/06-garlands.png')
     },
   ]
 
@@ -86,9 +86,9 @@ const styles = StyleSheet.create({
   },
   container: {
     height: "100%",
-    marginBottom: "1rem",
-    paddingLeft: "1rem",
-    paddingRight: "1rem",
+    marginBottom: 8,
+    paddingLeft: 8,
+    paddingRight: 8,
     backgroundColor: "#F4F0F4",
   },
   items: {
@@ -98,11 +98,11 @@ const styles = StyleSheet.create({
   line: {
     width: "100%",
     flexDirection: "row",
-    marginBottom: "0.5rem",
+    marginBottom: 4,
     backgroundColor: "#F4F0F4",
     justifyContent: "center",
     alignItems: "center",
-    marginRight: "1rem"
+    marginRight: 8
   },
   image: {
     width: 25,
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
   imageBox: {
     backgroundColor: "white",
     borderRadius: 200,
-    padding: "1rem"
+    padding: 8
   },
   topBar: {
     marginTop: 10,
@@ -139,6 +139,3 @@ const styles = StyleSheet.create({
     height: "100%"
   }
 });
-
-
-export default LampApp;

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "dispositivos-moveis",
-    "slug": "dispositivos-moveis",
+    "name": "lighteria",
+    "slug": "lighteria",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
